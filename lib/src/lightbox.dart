@@ -108,7 +108,7 @@ class _LightBoxState extends State<LightBox> {
         placeholder: (context, url) =>
             Center(child: CircularProgressIndicator()),
         errorWidget: (context, url, error) => Icon(Icons.error),
-        fit: BoxFit.cover,
+        fit: BoxFit.contain,
       );
     } else if (imageType == ImageType.ASSET) {
       return Image.asset(
